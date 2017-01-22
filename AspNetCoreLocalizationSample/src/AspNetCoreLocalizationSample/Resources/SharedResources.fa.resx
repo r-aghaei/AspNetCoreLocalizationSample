@@ -123,6 +123,9 @@
   <data name="About" xml:space="preserve">
     <value>درباره</value>
   </data>
+  <data name="Here is some information about your application." xml:space="preserve">
+    <value>این اطلاعاتی در مورد برنامه شما است.</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>خانه</value>
   </data>

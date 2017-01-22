@@ -31,7 +31,10 @@ namespace AspNetCoreLocalizationSample.Controllers
 
             return LocalRedirect(returnUrl);
         }
-
+        public IActionResult About()
+        {
+            return View();
+        }
         public IActionResult Error()
         {
             return View();
