@@ -1,5 +1,5 @@
 # ASP.NET Core Localization Sample
-The example contains localization in these fields:
+The example contains localization in these topics:
 - DisplayAttribute
 - Validation Attributes 
 - Model Binding errors 
