@@ -1,0 +1,28 @@
+﻿@model AspNetCoreLocalizationSample.Models.SampleModel
+@{
+    ViewData["Title"] = SR["Sample Model"];
+}
+<form asp-controller="Home" asp-action="Index" method="post" class="form-horizontal">
+    <h4>@SR["Sample Model"]</h4>
+    <hr />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Id" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Name" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-default">@SR["Save"]</button>
+        </div>
+    </div>
+</form>
