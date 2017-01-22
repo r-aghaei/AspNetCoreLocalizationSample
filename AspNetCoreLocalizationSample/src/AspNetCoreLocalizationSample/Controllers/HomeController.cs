@@ -21,7 +21,7 @@ namespace AspNetCoreLocalizationSample.Controllers
         {
             return View(model);
         }
-        public IActionResult SetLanguage(string culture, string returnUrl)
+        public IActionResult SetCulture(string culture, string returnUrl)
         {
             Response.Cookies.Append(
                 CookieRequestCultureProvider.DefaultCookieName,

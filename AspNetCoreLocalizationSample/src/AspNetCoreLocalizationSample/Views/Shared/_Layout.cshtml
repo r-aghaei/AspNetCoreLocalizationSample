@@ -61,7 +61,7 @@
                                 var direction = item.TextInfo.IsRightToLeft ? "rtl" : "ltr";
                                 <text>
                                 <li class="@active">
-                                    <a style="direction:@direction" asp-area="" asp-controller="Home" asp-action="SetLanguage" asp-route-culture="@item.Name" asp-route-returnUrl="@Context.Request.Path">@item.NativeName</a>
+                                    <a style="direction:@direction" asp-area="" asp-controller="Home" asp-action="SetCulture" asp-route-culture="@item.Name" asp-route-returnUrl="@Context.Request.Path">@item.NativeName</a>
                                 </li>
                                 </text>
                             }
