@@ -34,7 +34,7 @@ namespace AspNetCoreLocalizationSample
             services.AddMvc(options =>
             {
                 var F = services.BuildServiceProvider().GetService<IStringLocalizerFactory>();
-                var L = F.Create("ModelBindingMessages", null);
+                var L = F.Create("ModelBindingMessages", "AspNetCoreLocalizationSample");
                 options.ModelBindingMessageProvider.ValueIsInvalidAccessor =
                     (x) => L["The value '{0}' is invalid."];
                 options.ModelBindingMessageProvider.ValueMustBeANumberAccessor =
