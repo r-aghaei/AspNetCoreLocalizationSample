@@ -27,3 +27,4 @@ You may want to pay attention to these parts of the project for settings:
  - `SetCulture` action in `Home` controller which we used to set culture.
  - `About.cshtml` and `Index.cshtml` to see the way which we used `SR` which is injected in `_ViewImports`.
 
+![ASP.NET Core Localization Sample](image.png)
